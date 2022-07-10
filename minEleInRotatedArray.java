@@ -49,7 +49,7 @@ public class minEleInRotatedArray
                 A[i] = sc.nextInt();
             }
             
-            Solution sol = new Solution();
+            Solutions sol = new Solutions();
             System.out.println(sol.findMin(A, n));
         }
     }
@@ -59,7 +59,7 @@ public class minEleInRotatedArray
 
 //User function Template for Java
 
-class Solution
+class Solutions
 {
     int findMin(int arr[], int n)
     {

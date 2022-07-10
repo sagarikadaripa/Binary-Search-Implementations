@@ -34,7 +34,7 @@ class rotatedArrayEleSearch{
 
 class Solution 
 { 
-    static int Search(int array[], int target)
+    public static int Search(int array[], int target)
 	{
 	    int l = 0, h = array.length - 1;
 	    while(l <= h){

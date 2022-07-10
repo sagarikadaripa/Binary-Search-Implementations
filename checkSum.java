@@ -38,7 +38,7 @@ public class checkSum {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            boolean ans = new Solution().hasArrayTwoCandidates(arr, n, x);
+            boolean ans = new Solutionss().hasArrayTwoCandidates(arr, n, x);
             System.out.println(ans ? "Yes" : "No");
         }
     }
@@ -49,7 +49,7 @@ public class checkSum {
 //User function Template for Java
 
 
-class Solution {
+class Solutionss {
     boolean hasArrayTwoCandidates(int arr[], int n, int x) {
         // code here
         Arrays.sort(arr);

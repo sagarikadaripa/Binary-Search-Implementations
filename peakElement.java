@@ -14,7 +14,7 @@ class peakElement{
 			}
 		    
 		    int f=0;
-			int A=(new Solution()).peakElement(tmp,n);
+			int A=(new Sol()).peakElement(tmp,n);
 			
 			if(A<0 && A>=n)
 			    System.out.println(0);
@@ -33,13 +33,14 @@ class peakElement{
 			    System.out.println(f);
 			}
 		}
+		sc.close();
 	}
 }// } Driver Code Ends
 
 
 /*Complete the function below*/
 
-class Solution
+class Sol
 {
 	// Function to find the peak element
 	// arr[]: input array

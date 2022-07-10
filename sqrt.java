@@ -9,7 +9,7 @@ class sqrt
 		while(t>0)
 		{
 			long a = sc.nextInt();
-			Solution obj = new Solution();
+			Solu obj = new Solu();
 			System.out.println(obj.floorSqrt(a));
 		t--;
 		}
@@ -23,7 +23,7 @@ this function*/
 
 // Function to find square root
 // x: element to find square root
-class Solution
+class Solu
 {
      long floorSqrt(long x)
 	 {
