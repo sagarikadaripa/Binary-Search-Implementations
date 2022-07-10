@@ -40,8 +40,9 @@ class Solution
 	    while(l <= h){
 	        int mid = l + (h - l)/2;
 	        if(array[mid] == target) return mid;
-	         //leftmost side is sorted
-	         if(array[l] < array[mid]){
+			//[3,1] target = 1 
+	         //leftmost side is sorted <= because lets say mid = 0 
+	         if(array[l] <= array[mid]){
     	         if(array[l] <= target && target < array[mid]){
     	             h = mid - 1;
     	         }
