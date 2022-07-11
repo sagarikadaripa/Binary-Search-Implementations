@@ -36,21 +36,21 @@ public class minEleInRotatedArray
 {
     public static void main(String args[])
     {
-        Scanner sc = new Scanner(System.in);
-        
-        int t = sc.nextInt();
-        while (t-- > 0)
-        {
-            int n = sc.nextInt();
-            int A[] = new int[n];
-            
-            for (int i = 0;i < n;i++)
+        try (Scanner sc = new Scanner(System.in)) {
+            int t = sc.nextInt();
+            while (t-- > 0)
             {
-                A[i] = sc.nextInt();
+                int n = sc.nextInt();
+                int A[] = new int[n];
+                
+                for (int i = 0;i < n;i++)
+                {
+                    A[i] = sc.nextInt();
+                }
+                
+                Solutions sol = new Solutions();
+                System.out.println(sol.findMin(A, n));
             }
-            
-            Solutions sol = new Solutions();
-            System.out.println(sol.findMin(A, n));
         }
     }
 }

@@ -10,31 +10,32 @@ import java.util.*;
 
 class rotatedArrayEleSearch{
     public static void main(String args[]) throws IOException { 
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        try (Scanner sc = new Scanner(System.in)) {
+			int t = sc.nextInt();
 
-        while(t > 0){
-        	int n = sc.nextInt();
-        	int[] array = new int[n];
-        	for(int i=0; i<n; i++)
-        	{
-        		array[i] = sc.nextInt();
-        	}
-        	int target = sc.nextInt();
+			while(t > 0){
+				int n = sc.nextInt();
+				int[] array = new int[n];
+				for(int i=0; i<n; i++)
+				{
+					array[i] = sc.nextInt();
+				}
+				int target = sc.nextInt();
 
-            Solution ob = new Solution();
-			System.out.println(ob.Search(array,target));
-            t--;
-        }
+			    Answer ob = new Answer();
+				System.out.println(ob.Search(array,target));
+			    t--;
+			}
+		}
     } 
 } // } Driver Code Ends
 
 
 //User function Template for Java
 
-class Solution 
+class Answer 
 { 
-    public static int Search(int array[], int target)
+    public int Search(int array[], int target)
 	{
 	    int l = 0, h = array.length - 1;
 	    while(l <= h){
